@@ -83,11 +83,23 @@ echo '<div style="border: solid 2px #F00">';
     print_r($variable);
     echo '</pre>';
 echo '</div>';
-
 exit();
 
 
+
 //=============================================
+
+function addition($parameter0 ,$parameter1)
+{
+    $parameter3 = $parameter0 + $parameter1; 
+    return $parameter3;
+}
+
+echo addition(1,2);
+//=============================================
+
+
+
 
 
 
