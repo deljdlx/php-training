@@ -8,6 +8,18 @@ ini_set('display_errors', true);
 
 function somme($tableauDeValeurs)
 {
+    //la méthode de dévloppeur
+    //return array_sum($tableauDeValeurs);
+
+    $somme = 0;
+    foreach($tableauDeValeurs as $index => $value) {
+        if(is_numeric($value)) {
+            $somme += $value;
+        }
+    }
+
+    return $somme;
+    
 
 }
 
@@ -18,12 +30,14 @@ $listeNombre = [
     2,
     5,
     6,
-]
+];
 
 
 var_dump(
     somme($listeNombre)
 );
+
+exit();
 
 
 
