@@ -62,6 +62,38 @@ echo $chaine;
 
 //=============================================
 
+function incremente($parameter)
+{
+    $parameter ++;
+    return $parameter;
+}
+
+
+$variable = 0;
+
+$variable = incremente($variable);
+
+$variable = incremente($variable);
+
+incremente($variable); //ici la valeur retournée est 3
+
+echo '<div style="border: solid 2px #F00">';
+    echo '<div style="; background-color:#CCC">@'.__FILE__.' : '.__LINE__.'</div>';
+    echo '<pre>';
+    print_r($variable);
+    echo '</pre>';
+echo '</div>';
+
+exit();
+
+
+//=============================================
+
+
+
+
+
+
 
 
  
