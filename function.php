@@ -2,6 +2,31 @@
 ini_set('display_errors', true);
 
 
+
+
+//=============================================
+
+function somme($tableauDeValeurs)
+{
+
+}
+
+
+$listeNombre = [
+    1,
+    1,
+    2,
+    5,
+    6,
+]
+
+
+var_dump(
+    somme($listeNombre)
+);
+
+
+
 //=============================================
 
 function chaineTropLongue($chaine, $length)
