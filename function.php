@@ -99,9 +99,45 @@ echo addition(1,2);
 //=============================================
 
 
+function estCeUnNombre($parameter)
+{
+   $result =  is_int($parameter);
+    return $result; 
+}
+
+echo estCeUnNombre(1);
+echo estCeUnNombre('coucou');
+
+//=============================================
+
+function estUnNombreAVirgule($parameter)
+{
+
+}
+
+echo estCeUnNombre(1.1); //return true
+echo estCeUnNombre(2); //return false
+
+//=============================================
+
+function chaineTropLongue($chaine, $length)
+{
+
+}
+
+echo chaineTropLongue(
+    'hello world',
+    4
+); //return true
 
 
+echo chaineTropLongue(
+    'hello world',
+    20
+); //return false
 
+
+//=============================================
 
 
 
