@@ -2,6 +2,32 @@
 ini_set('display_errors', true);
 
 
+//=============================================
+
+function chaineTropLongue($chaine, $length)
+{
+    $longueurChaine = strlen($chaine);
+    if ($longueurChaine > $length) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+$returnValue = chaineTropLongue(
+    'hello world',
+    20
+); //return true
+
+var_dump($returnValue);
+
+//=============================================
+
+
+
+
+
 $uneVille = [
     'nom' => 'Saint-Egreve',
     'codePostal' => 38120,
@@ -120,21 +146,23 @@ echo estCeUnNombre(2); //return false
 
 //=============================================
 
-function chaineTropLongue($chaine, $length)
-{
 
-}
+
+
+
 
 echo chaineTropLongue(
     'hello world',
     4
 ); //return true
 
+exit();
+
 
 echo chaineTropLongue(
     'hello world',
     20
-); //return false
+); //return falsestr
 
 
 //=============================================
