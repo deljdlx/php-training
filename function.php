@@ -53,9 +53,16 @@ $uneVille = [
  
  function donneMoiCeQUeJaiDonne($parameter)
  {
-     
+     return $parameter;
  }
  
+$chaine = 'hello';
+$chaine = donneMoiCeQUeJaiDonne($chaine);
+echo $chaine;
+
+//=============================================
+
+
 
  
  //=============================================
