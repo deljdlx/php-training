@@ -6,9 +6,11 @@ $parking = [
     'A' => [true, true, true, true, true, true],
     'B' => [true, false, true, false, true, false],
     'C' => [true, true, true, true, true, true],
-    'D' => [true, true, true, true, false, true],
+    'D' => [false, false, false, false, false, false],
     'E' => [true, false, true, true, true, true],
 ];
+
+
 
 
 
@@ -28,7 +30,32 @@ echo __FILE__.':'.__LINE__; exit();
 
 //=============================================
 
+//syntaxe complète
+/*
+foreach($tableau as $index => $valeur) {
 
+}
+
+//syntaxe courte
+foreach($tableau as $valeur) {
+
+}
+*/
+
+
+function mettreEnLibre($range, $parking)
+{
+  foreach($parking[$range] as $numeroPlace => $estLibre) {
+        $parking[$range][$numeroPlace] = true;
+    }
+    return $parking;
+}
+$range = 'D';
+
+$parking = mettreEnLibre($range, $parking);
+print_r($parking['D']);
+echo __FILE__.':'.__LINE__; exit();
+//=============================================
 
 
 
@@ -41,6 +68,10 @@ foreach($parking['B'] as $numeroPlace => $estLibre) {
         $parking['B'][$numeroPlace] = true;
     }
 }
+
+
+
+
 
 echo "\n";
 print_r($parking);
